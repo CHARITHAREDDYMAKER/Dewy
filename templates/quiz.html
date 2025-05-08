@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Questionnaire - DEWY</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="/">DEWY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/quiz">Questionnaire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white">
+            <h2 class="card-title h4 mb-0">Skin Condition Questionnaire</h2>
+          </div>
+          <div class="card-body">
+            <p class="card-text mb-4">Answer these questions to help us diagnose your skin condition.</p>
+            
+            <form id="skinQuizForm">
+              <!-- Question 1 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="age_group">1. What is your age group?</label>
+                <select class="form-select" id="age_group" name="age_group" required>
+                  <option value="" selected disabled>Select your age group</option>
+                  <option value="Under 13">Under 13</option>
+                  <option value="13–18">13–18</option>
+                  <option value="19–30">19–30</option>
+                  <option value="31–45">31–45</option>
+                  <option value="46–60">46–60</option>
+                  <option value="Over 60">Over 60</option>
+                </select>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="skin_type">2. What is your skin type?</label>
+                <select class="form-select" id="skin_type" name="skin_type" required>
+                  <option value="" selected disabled>Select your skin type</option>
+                  <option value="Oily">Oily</option>
+                  <option value="Dry">Dry</option>
+                  <option value="Combination">Combination</option>
+                  <option value="Normal">Normal</option>
+                  <option value="Sensitive">Sensitive</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="main_issue">3. What is the main issue you're experiencing?</label>
+                <select class="form-select" id="main_issue" name="main_issue" required>
+                  <option value="" selected disabled>Select your main issue</option>
+                  <option value="Acne / Pimples">Acne / Pimples</option>
+                  <option value="Redness / Rashes">Redness / Rashes</option>
+                  <option value="Dry or Flaky Skin">Dry or Flaky Skin</option>
+                  <option value="Dark spots or Hyperpigmentation">Dark spots or Hyperpigmentation</option>
+                  <option value="Itching or Irritation">Itching or Irritation</option>
+                  <option value="Other / Not sure">Other / Not sure</option>
+                </select>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="duration">4. How long have you been experiencing this issue?</label>
+                <select class="form-select" id="duration" name="duration" required>
+                  <option value="" selected disabled>Select duration</option>
+                  <option value="Less than a week">Less than a week</option>
+                  <option value="1–2 weeks">1–2 weeks</option>
+                  <option value="1–3 months">1–3 months</option>
+                  <option value="More than 3 months">More than 3 months</option>
+                </select>
+              </div>
+
+              <!-- Question 5 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="past_condition">5. Have you had any diagnosed skin conditions in the past?</label>
+                <select class="form-select" id="past_condition" name="past_condition" required>
+                  <option value="" selected disabled>Select an option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </div>
+
+              <!-- Question 6 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="using_products">6. Are you currently using any skincare or treatment products?</label>
+                <select class="form-select" id="using_products" name="using_products" required>
+                  <option value="" selected disabled>Select an option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Sometimes">Sometimes</option>
+                </select>
+              </div>
+
+              <!-- Question 7 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="allergies">7. Do you have any known allergies to skincare ingredients?</label>
+                <select class="form-select" id="allergies" name="allergies" required>
+                  <option value="" selected disabled>Select an option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </div>
+
+              <!-- Question 8 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="sun_exposure">8. How often do you get sun exposure?</label>
+                <select class="form-select" id="sun_exposure" name="sun_exposure" required>
+                  <option value="" selected disabled>Select frequency</option>
+                  <option value="Rarely">Rarely</option>
+                  <option value="Occasionally">Occasionally</option>
+                  <option value="Daily, but short">Daily, but short</option>
+                  <option value="Daily and long periods">Daily and long periods</option>
+                </select>
+              </div>
+
+              <!-- Question 9 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="exercise">9. How often do you engage in physical exercise?</label>
+                <select class="form-select" id="exercise" name="exercise" required>
+                  <option value="" selected disabled>Select frequency</option>
+                  <option value="Rarely or never">Rarely or never</option>
+                  <option value="1–2 times a week">1–2 times a week</option>
+                  <option value="3–4 times a week">3–4 times a week</option>
+                  <option value="5 or more times a week">5 or more times a week</option>
+                  <option value="Daily">Daily</option>
+                </select>
+              </div>
+
+              <!-- Question 10 -->
+              <div class="mb-4">
+                <label class="form-label fw-bold" for="sweat">10. Do you usually sweat a lot during exercise?</label>
+                <select class="form-select" id="sweat" name="sweat" required>
+                  <option value="" selected disabled>Select an option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Sometimes">Sometimes</option>
+                </select>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary px-5">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>DEWY</h5>
+          <p>Skin condition diagnostic platform powered by advanced AI technology.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5>Contact</h5>
+          <p>Email: info@dewy.com<br>Phone: (123) 456-7890</p>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 DEWY. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About DEWY - Skin Condition Diagnostic</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="/">DEWY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quiz">Questionnaire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4 text-success mb-3">About DEWY</h1>
+        <p class="lead mb-4">Your Intelligent Skin Diagnostic Assistant</p>
+        <p class="mb-4">DEWY is an advanced skin condition diagnostic platform that combines cutting-edge AI technology with dermatological expertise to provide accurate and accessible skin health assessments.</p>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2 class="card-title mb-4">How It Works</h2>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="h5 mb-3">Image Analysis</h3>
+                    <p>Our image-based diagnostic system uses a Convolutional Neural Network (CNN) trained on thousands of dermatological images. The model can identify common skin conditions including:</p>
+                    <ul>
+                      <li>Acne</li>
+                      <li>Eksim (Eczema)</li>
+                      <li>Herpes</li>
+                      <li>Panu (Tinea versicolor)</li>
+                      <li>Rosacea</li>
+                    </ul>
+                    <p>The model has been trained to an accuracy of over 90% on validated test cases.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="h5 mb-3">Questionnaire Assessment</h3>
+                    <p>Our text-based diagnostic system uses a sophisticated machine learning algorithm trained on clinical data. The questionnaire evaluates factors such as:</p>
+                    <ul>
+                      <li>Demographics (age, skin type)</li>
+                      <li>Symptoms and duration</li>
+                      <li>Medical history</li>
+                      <li>Lifestyle factors</li>
+                      <li>Environmental exposure</li>
+                    </ul>
+                    <p>This provides a complementary diagnostic approach for users who prefer not to upload photos or want a second opinion.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2 class="card-title mb-4">Our Technology</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="h5">Image Model</h3>
+                <p>Our CNN-based image classification model was built using TensorFlow and Keras. The model architecture includes:</p>
+                <ul>
+                  <li>Multiple convolutional layers with ReLU activation</li>
+                  <li>Max pooling layers for feature selection</li>
+                  <li>Dropout layers to prevent overfitting</li>
+                  <li>Batch normalization for training stability</li>
+                  <li>Dense layers for final classification</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h5">Text-based Model</h3>
+                <p>Our questionnaire-based model was built using scikit-learn. The model includes:</p>
+                <ul>
+                  <li>Feature preprocessing and normalization</li>
+                  <li>Feature selection to identify key predictors</li>
+                  <li>Random Forest classifier for robust prediction</li>
+                  <li>Cross-validation to ensure generalizability</li>
+                  <li>Probability calibration for confidence scoring</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2 class="card-title mb-4">Medical Disclaimer</h2>
+            <div class="alert alert-info">
+              <p class="mb-0">DEWY is designed to be an informational and preliminary diagnostic tool only. It is not intended to replace professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+            </div>
+            <p>While our AI models have been trained on extensive datasets, they have limitations and may not accurately identify all skin conditions. The recommendations provided are general in nature and may not be suitable for everyone.</p>
+            <p>If you experience severe symptoms, rapid worsening of a condition, or any concerning changes to your skin, please consult a healthcare professional immediately.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>DEWY</h5>
+          <p>Skin condition diagnostic platform powered by advanced AI technology.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5>Contact</h5>
+          <p>Email: info@dewy.com<br>Phone: (123) 456-7890</p>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 DEWY. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

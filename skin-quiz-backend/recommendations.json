@@ -1,0 +1,197 @@
+{
+  "acne": {
+    "description": "Acne is a common skin condition characterized by pimples, blackheads, and whiteheads. It occurs when hair follicles become clogged with oil and dead skin cells. It's most common during puberty but can affect people of all ages.",
+    "products": [
+      {
+        "name": "Benzoyl Peroxide Cleanser",
+        "description": "Helps kill bacteria that cause acne and removes excess oil from the skin."
+      },
+      {
+        "name": "Salicylic Acid Treatment",
+        "description": "Helps unclog pores and reduce inflammation. Use as a spot treatment on affected areas."
+      },
+      {
+        "name": "Non-comedogenic Moisturizer",
+        "description": "Hydrates skin without clogging pores. Look for oil-free formulations."
+      },
+      {
+        "name": "Adapalene Gel",
+        "description": "A topical retinoid that prevents clogged pores and promotes cell turnover."
+      }
+    ],
+    "diet": [
+      {
+        "name": "Low Glycemic Foods",
+        "description": "Foods with a low glycemic index may help reduce acne flare-ups. Include whole grains, legumes, and most fruits."
+      },
+      {
+        "name": "Omega-3 Fatty Acids",
+        "description": "Found in fish, walnuts, and flaxseeds, these may help reduce inflammation."
+      },
+      {
+        "name": "Zinc-rich Foods",
+        "description": "Foods like oysters, pumpkin seeds, and chickpeas may help regulate oil production."
+      },
+      {
+        "name": "Limit Dairy and Sugar",
+        "description": "Some studies suggest limiting dairy products and refined sugars may improve acne symptoms."
+      }
+    ]
+  },
+  "eksim": {
+    "description": "Eksim (eczema) is a condition that causes the skin to become itchy, red, dry, and cracked. It's often linked to allergens and is common in people with a family history of allergies or asthma.",
+    "products": [
+      {
+        "name": "Gentle Fragrance-free Cleanser",
+        "description": "Mild soap-free cleanser that won't strip natural oils from the skin."
+      },
+      {
+        "name": "Thick Emollient Cream",
+        "description": "Apply regularly to lock in moisture. Look for ingredients like ceramides or colloidal oatmeal."
+      },
+      {
+        "name": "Hydrocortisone Cream",
+        "description": "For temporary relief of itching and inflammation during flare-ups."
+      },
+      {
+        "name": "Cotton Clothing",
+        "description": "Wear loose, cotton clothing to reduce irritation and allow skin to breathe."
+      }
+    ],
+    "diet": [
+      {
+        "name": "Anti-inflammatory Foods",
+        "description": "Include fatty fish, turmeric, ginger, and leafy greens to help reduce inflammation."
+      },
+      {
+        "name": "Probiotics",
+        "description": "Foods like yogurt, kefir, and fermented vegetables may help improve symptoms."
+      },
+      {
+        "name": "Identify Triggers",
+        "description": "Common food triggers include dairy, eggs, nuts, soy, and wheat. Consider an elimination diet under medical supervision."
+      },
+      {
+        "name": "Stay Hydrated",
+        "description": "Drink plenty of water to help maintain skin hydration from within."
+      }
+    ]
+  },
+  "herpes": {
+    "description": "Herpes is a viral infection caused by the herpes simplex virus (HSV) that primarily affects the mouth or genital areas. It causes painful blisters or ulcers and is highly contagious through direct contact.",
+    "products": [
+      {
+        "name": "Antiviral Medication",
+        "description": "Prescription medications like acyclovir, famciclovir, or valacyclovir can help manage outbreaks."
+      },
+      {
+        "name": "Pain Relief Cream",
+        "description": "Lidocaine or benzocaine creams can provide temporary relief from pain and itching."
+      },
+      {
+        "name": "Cold Sore Patches",
+        "description": "Hydrocolloid patches can protect the sore and promote healing."
+      },
+      {
+        "name": "Lysine Lip Balm",
+        "description": "Lip balms containing lysine may help prevent and treat cold sores."
+      }
+    ],
+    "diet": [
+      {
+        "name": "Foods High in Lysine",
+        "description": "Include fish, chicken, eggs, and cheese, which may help prevent outbreaks."
+      },
+      {
+        "name": "Limit Arginine",
+        "description": "Reduce foods high in arginine like nuts, chocolate, and certain seeds, which may trigger outbreaks."
+      },
+      {
+        "name": "Immune-Boosting Foods",
+        "description": "Include foods rich in vitamins C and E, and zinc to support immune function."
+      },
+      {
+        "name": "Avoid Triggers",
+        "description": "Spicy or acidic foods may worsen symptoms during an outbreak."
+      }
+    ]
+  },
+  "panu": {
+    "description": "Panu (tinea versicolor) is a common fungal infection that causes small, discolored patches of skin. It's caused by a type of yeast that naturally lives on the skin but can grow excessively in certain conditions.",
+    "products": [
+      {
+        "name": "Antifungal Shampoo",
+        "description": "Shampoos containing selenium sulfide or ketoconazole can be applied to affected areas."
+      },
+      {
+        "name": "Antifungal Cream",
+        "description": "Topical creams with clotrimazole or miconazole can treat the infection effectively."
+      },
+      {
+        "name": "Zinc Pyrithione Soap",
+        "description": "Regular use can help prevent recurrence of the infection."
+      },
+      {
+        "name": "Exfoliating Scrub",
+        "description": "Gentle exfoliation can help remove dead skin cells and improve treatment penetration."
+      }
+    ],
+    "diet": [
+      {
+        "name": "Probiotics",
+        "description": "Foods like yogurt and kefir can help maintain a healthy balance of microorganisms in the body."
+      },
+      {
+        "name": "Limit Sugar",
+        "description": "Reducing sugar intake may help control yeast growth in the body."
+      },
+      {
+        "name": "Garlic and Onions",
+        "description": "These foods have natural antifungal properties that may help fight the infection."
+      },
+      {
+        "name": "Coconut Oil",
+        "description": "Contains caprylic acid which has antifungal properties. Can be consumed or applied topically."
+      }
+    ]
+  },
+  "rosacea": {
+    "description": "Rosacea is a common skin condition that causes redness, visible blood vessels, and sometimes small, red, pus-filled bumps on the face. It typically affects middle-aged women with fair skin but can affect anyone.",
+    "products": [
+      {
+        "name": "Gentle Fragrance-free Cleanser",
+        "description": "Mild, soap-free cleansers that won't irritate sensitive skin."
+      },
+      {
+        "name": "Mineral Sunscreen",
+        "description": "Use SPF 30+ with zinc oxide or titanium dioxide, as sun exposure can trigger flare-ups."
+      },
+      {
+        "name": "Anti-redness Serum",
+        "description": "Products containing niacinamide or azelaic acid can help reduce redness."
+      },
+      {
+        "name": "Green-tinted Primer",
+        "description": "Can help neutralize redness for cosmetic purposes."
+      }
+    ],
+    "diet": [
+      {
+        "name": "Avoid Trigger Foods",
+        "description": "Common triggers include spicy foods, alcohol, hot beverages, and foods containing cinnamaldehyde (cinnamon, tomatoes, citrus)."
+      },
+      {
+        "name": "Anti-inflammatory Foods",
+        "description": "Incorporate omega-3 fatty acids, turmeric, ginger, and leafy greens to help reduce inflammation."
+      },
+      {
+        "name": "Prebiotics and Probiotics",
+        "description": "May help improve gut health, which can be linked to skin inflammation."
+      },
+      {
+        "name": "Stay Cool",
+        "description": "Avoid hot drinks and foods that may trigger flushing. Opt for room temperature or cold options."
+      }
+    ]
+  }
+}

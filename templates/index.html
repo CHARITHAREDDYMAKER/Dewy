@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEWY - Skin Condition Diagnostic</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="/">DEWY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quiz">Questionnaire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero py-5">
+    <div class="container text-center">
+      <h1 class="display-3 fw-bold text-success mb-3">DEWY</h1>
+      <h2 class="h3 mb-4">Skin Condition Diagnostic Assistant</h2>
+      <p class="lead mb-4">Get accurate skin condition diagnoses using cutting-edge AI technology</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title">Choose Your Diagnostic Method</h3>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary mb-2" id="imageMethodBtn">Image Analysis</button>
+                <a href="/quiz" class="btn btn-outline-primary">Questionnaire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Features</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-camera fs-1 text-primary"></i>
+              </div>
+              <h3 class="h5">Image Analysis</h3>
+              <p>Upload a photo of your skin condition and our AI will analyze it for accurate diagnosis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-list-check fs-1 text-primary"></i>
+              </div>
+              <h3 class="h5">Questionnaire</h3>
+              <p>Answer a few questions about your symptoms and we'll help identify your skin condition.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-lightbulb fs-1 text-primary"></i>
+              </div>
+              <h3 class="h5">Personalized Recommendations</h3>
+              <p>Get tailored product recommendations and diet advice for your specific condition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Upload Modal -->
+  <div class="modal fade" id="imageUploadModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Upload Skin Image</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="imageUploadForm">
+            <div class="mb-3">
+              <label for="skinImage" class="form-label">Select a clear image of your skin condition</label>
+              <input class="form-control" type="file" id="skinImage" accept="image/*">
+              <div class="form-text">For best results, ensure good lighting and focus on the affected area.</div>
+            </div>
+            <div id="previewContainer" class="text-center mb-3 d-none">
+              <img id="imagePreview" class="img-fluid rounded image-preview-size" alt="Preview of uploaded skin condition image">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="analyzeImageBtn">Analyze Image</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>DEWY</h5>
+          <p>Skin condition diagnostic platform powered by advanced AI technology.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5>Contact</h5>
+          <p>Email: info@dewy.com<br>Phone: (123) 456-7890</p>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 DEWY. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
