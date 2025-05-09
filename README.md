@@ -1,7 +1,7 @@
 STEPS TO RUN PROJECT LOCALLY
   1)Clone the repo:
-    git clone https://github.com/CHARITHAREDDYMAKER/DEWY-SKIN.git
-    cd DEWY-SKIN
+    git clone https://github.com/CHARITHAREDDYMAKER/DEWY.git
+    cd DEWY
   2)Install dependencies:
     pip install flask scikit-learn tensorflow
   3)Run the backend (Flask):
