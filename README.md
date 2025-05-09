@@ -37,3 +37,7 @@ To avoid evaluation delays:
 We can also provide a Google Drive link or a ZIP file containing the complete project (including model files).
 
 Please contact us if model files are missing or you face difficulty running the project.
+
+
+HERE IS GOOGLE DRIVE LINK:
+https://drive.google.com/file/d/1xkayWLu4ZsSf2NITJE3LTy1G_P33Ozyd/view?usp=sharing
